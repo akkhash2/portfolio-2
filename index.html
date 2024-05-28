@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a id="home" href="#title">Home</a></li>
+            <li><a id="pro" href="#project1">WebDesignProjects</a></li>
+            <li><a id="all" href="#services">AllServices</a></li>
+            <li><a id="about" href="#contact">About</a></li>            
+        </ul>
+    </div>
+    <div class="title" id="title">
+        <div class="star"></div>
+        <h1>Web & Graphic Design Services By Varun </h1>
+    </div>
+    <div class="welcome">
+        <div class="content">
+            <h3>Welcome to my portfolio</h3>
+            <span class="circle"></span>
+            <h4>I am a web and graphic designer based in Greece with many years of experience working on custom web design projects, 3D graphics, and digital artwork for clients from around the world. I specialize in creating unique visual concepts that leave a lasting impact.</h4>
+            <button class="btn1">Learn more</button>
+        </div>
+    </div>
+    <div class="lets"><h2>Lets work together!<h2></div>
+    <div class="project1" id="project1">
+        <h2>Weather Website</h2>
+        <span class="circle"></span>
+        <h3>Project Details:<span> Design + CSS | HTML + Coding | JavaScript + Logic | Django + Backend</span></h3>
+        <div class="accu">
+            <div class="img"></div>
+            <div class="txt">
+                <h1>Weather Website</h1>
+                <div class="info">
+                Weather websites are incredibly useful tools that provide a range of functionalities to help individuals and organizations plan their activities based on weather conditions. Here are some prompts that highlight the uses and functionalities of a weather website:
+
+                    Real-Time Weather Updates: Stay informed with the latest weather conditions for your area. Whether it’s sunny, raining, or snowing, a weather website provides up-to-the-minute updates to help you prepare for your day<br/><span>1.
+                    Extended Forecasts:</span> Planning a weekend getaway or an outdoor event? Check the 5-day, 10-day, or even monthly forecasts to make informed decisions and avoid any weather-related surprises<br/><span>2.
+                    Weather Alerts and Warnings:</span> Receive timely notifications about severe weather conditions such as storms, hurricanes, or extreme temperatures. This feature is crucial for safety and emergency preparedness<br/><span>3.
+                    Interactive Radar Maps:</span> Visualize the movement of weather systems with interactive radar maps. This helps in tracking storms and understanding the potential impact on your region<br/> <span> 4.
+                    Detailed Weather Analysis:</span> Get detailed insights into weather patterns, including temperature, humidity, wind speed.
+                </div>
+                </div>
+        </div>
+        <div class="project2">
+            <h2>Outfit Suggestor Website</h2>
+            <span class="circle"></span>
+            <h3>Project Details:<span> Design + CSS | HTML + Coding | JavaScript + Logic | Django + Backend</span></h3>
+            <div class="shop">
+                <div class="img"></div>
+                <div class="txt">
+                    <h1>Outfit Suggestor Website</h1>
+                    <div class="info">
+                        An outfit suggestor for men website is a digital platform designed to help men find clothing and style combinations that suit their preferences and needs. Here are some prompts that outline the functionalities of such a website:
+
+                        <br/><span>1.Personalized Style Recommendations:</span> Users can receive outfit suggestions based on their personal style, body type, and preferences, ensuring a tailored experience <br/><span>2.
+                        Occasion-Based Filters:</span> Whether it’s for a casual day out or a formal event, the website offers outfit suggestions suitable for various occasions<br/><span>3.
+                        Seasonal Wardrobe Ideas:</span> The platform provides seasonal wardrobe updates, suggesting outfits that are both stylish and appropriate for the current weather conditions<br/><span>4.
+                        Virtual Try-On: </span>span>Some websites offer a virtual try-on feature, allowing users to see how clothes would look on them without physically trying them on<br/><span>5.
+                        Mix-and-Match Options:</span> Users can experiment with different combinations of clothing items to create unique looks
+                    </div>
+                    </div>
+            </div>
+    </div>
+    <div class="container" id="contact">
+        <div class="contact">
+            <span class="circle"></span>
+            <h1>
+                Creative<br/> Artwork</h1>
+            <h4>Let's work together to create unique, eye-catching designs that bring your brand to life with custom creative artwork.</h4>
+            <a href="mailto:varunbotcha777@gmail.com?subject=Creative%20Artwork%20Inquiry&body=Hello,%20I%20am%20interested%20in%20your%20creative%20artwork%20services.">Send me a message >></a>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <h1>What We Offer</h1>
+      <div class="inner">
+        <div class="serv1">
+            <h3>Web UI Design</h3>
+            <h5>
+                Web UI Design
+                We provide professional user interface design for websites and applications. Our web UI designs are tailored to your needs and are focused on providing an intuitive and user-friendly experience.
+                
+                </h5>
+        </div>
+        <div class="serv1">
+            <h3>
+                Website Development</h3>
+            <h5>
+                We offer comprehensive web development services that include the design, coding, and implementation of website systems. Working with an experienced programmer, we can create user-friendly websites that are tailored to your specific needs. Custom solutions that are designed to meet your requirements and help your business succeed.
+                </h5>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+        const containerHeight = container.offsetHeight;
+        const initialBackgroundSize = 100;
+        const maxBackgroundSize = 150; 
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const containerTop = container.offsetTop;
+
+            if (scrollTop >= containerTop && scrollTop <= (containerTop + containerHeight)) {
+                const scrolledPercentage = (scrollTop - containerTop) / containerHeight;
+                const newBackgroundSize = initialBackgroundSize + (scrolledPercentage * (maxBackgroundSize - initialBackgroundSize));
+                container.style.backgroundSize = `${newBackgroundSize}%`;
+            } else if (scrollTop < containerTop) {
+                container.style.backgroundSize = `${initialBackgroundSize}%`;
+            }
+        });
+    </script>
+</body>
+</html>

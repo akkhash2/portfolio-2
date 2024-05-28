@@ -1,0 +1,388 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+*
+{
+    margin: 0;
+    border:0;
+}
+body{
+    background-color: rgb(242, 229, 210);
+    display: block;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color:rgb(14, 6, 239);
+}
+.nav{
+    background-color:rgb(242, 229, 210);
+    position: fixed;
+    width:100%;
+    margin-top: -100px;
+    color: #fff9f9;
+    opacity: 1;
+    z-index: 100;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-right:100px;
+    
+}
+.nav ul li{
+    padding: 15px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(14, 6, 239);
+    transition: color 0.5s ease;
+}
+.nav ul li a:hover{
+    color:rgb(163, 174, 137);
+}
+#home:link,
+#about:link,
+#all:link,
+#pro:link
+{
+    color:rgb(14, 6, 239);
+}
+.title{
+    margin-top:100px;
+    margin-left: 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.title .star
+{   width: 150px;
+    height: 150px;
+    position: absolute;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(Photo1.webp);
+    margin-left:850px;
+    margin-top:120px;
+    transition: clip-path 1.5s ease;
+}
+.title .star:hover{
+    clip-path: polygon(51% 0, 100% 0, 100% 50%, 100% 100%, 49% 100%, 0 100%, 0 68%, 0 34%, 0 0);
+}
+.title h1
+{
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    display: inline;
+    text-transform: capitalize;
+    font-style: normal;
+    font-size: 100px;
+    color:rgb(30, 80, 244);
+}
+.welcome
+{
+    max-width:80%;
+    margin-left:10%;
+    margin-right: 10%;
+    margin-top:230px;
+    height:800px;
+    background:url(white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px 70px 180px 70px;
+    
+}
+.content
+{
+    
+    width:100%;
+    height: 800px;
+   
+    
+    background-color: rgb(242, 229, 210);
+    justify-content: center;
+    text-align:center;
+}
+.content h3{
+    font-family: "Cormorant SC", serif;
+    font-weight: 400;
+    font-size: 40px;
+    color:rgb(30, 80, 244);
+    padding-top: 50px;
+    text-transform: capitalize;
+    font-style: normal;
+}
+.content .circle{
+    width:50px;
+    height:50px;
+    margin-left: -40px;
+    margin-top:10px;
+    position: absolute;
+    border-radius: 50px;
+    background-color: yellow;
+    
+}
+.content h4{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    padding: 80px 120px 50px 120px;
+    display: block;
+    font-size:40px;
+    font-style: normal;
+    color:rgb(30, 80, 244);
+}
+.btn1
+{
+    background-color: rgb(30, 80, 244);
+    color:white;
+    width:150px;
+    height:50px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size:15px;
+    border-radius: 25px;
+    font-style: normal;
+    cursor:pointer;
+    transition: background-color 0.5s ease;
+}
+.btn1:hover{
+    border: 3px solid rgb(30, 80, 244);
+    background-color: white;
+    color:rgb(30, 80, 244);
+    transition: background-color 0.5s ease;
+}
+.lets{
+    justify-content: center;
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.lets h2
+{
+    color:rgb(30, 80, 244);
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size:30px;
+}
+.project1,
+.project2{
+    width:100%;
+    height: 800px;
+    background-color: azure;
+    padding-top:50px;
+    padding-bottom: 0%;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+.project1 h2,
+.project2 h2
+{
+    color:rgb(30, 80, 244);
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size:50px;
+}
+.project1 .circle,
+.project2 .circle{
+    width:40px;
+    height:40px;
+    margin-left: -40px;
+    margin-top:10px;
+    position:absolute;
+    border-radius: 50px;
+    background-color: yellow;
+    
+}
+.project1 h3,
+.project2 h3{
+    color:rgb(163, 174, 137);
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: normal;
+    margin-top:70px;
+}
+.project1 h3 span,
+.project2 h3 span{
+    font-weight:400;
+    color:rgb(30, 80, 244);
+}
+.project1 .accu,
+.project2 .shop
+{
+    height:560px;
+    width:100%;
+    margin-top:80px;
+    display: flex;
+    flex-direction: row;
+}
+.accu .img
+{
+    background: url(accu.png);
+    height:100%;
+    width:50%;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.shop .img
+{
+    background: url(shop.jpg);
+    height:100%;
+    width:50%;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.accu .txt,
+.shop .txt
+{ 
+    width:50%;
+    padding: 10px;
+}
+.txt h1,
+.shop h1{
+    padding-top: 10px;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 25px;
+    font-style: normal;
+    color: rgb(30, 80, 244);
+}
+.accu .info,
+.shop .info{
+    display: block;
+    padding: 50px;
+    color: rgb(30, 80, 244);
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 18px;
+    font-style: normal;
+}
+.info span
+{
+    color:rgb(119, 139, 71);
+    font-weight: 600;
+}
+.services{
+    justify-content: center;
+    text-align: center;
+    width:100%;
+    height:400px;
+    margin:100px 0 0 0;
+    padding-top:50px;
+    background-color: rgb(226, 222, 222);
+}
+.services h1{
+ color:rgb(30, 80, 244);
+ font-family: "Cormorant", serif;
+ font-optical-sizing: auto;
+ font-weight: 500;
+ font-size: 28px;
+ font-style: normal;
+}
+.inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:250px;
+    margin-left:200px;
+}
+.serv1
+{
+    width: 200px;
+    height:200px;
+    display: inline;
+    padding:20px;
+}
+.serv1 h3{
+    color:rgb(30, 80, 244);
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 18px;
+    font-style: normal;
+}
+.serv1 h5{
+    color:rgb(30, 80, 244);
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+}
+.container
+{
+    height: 90vh;
+    background-image: url('container.png');
+    margin-top: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-size 0.5s ease-in-out;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.contact
+{
+    width:250px;
+    height:50vh;
+    margin-top: 220px;
+    position: absolute;
+    padding: 10px;
+    display: inline;
+    background-color:rgb(242, 229, 210);
+}
+.contact .circle{
+    width:30px;
+    height:30px;
+    margin-top:-15px;
+    margin-left:-15px;
+    position:absolute;
+    border-radius: 50px;
+    background-color: yellow;
+    
+}
+.contact h1{
+    color:rgb(30, 80, 244);
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 35px;
+    font-style: normal;
+    padding-top: 10px;
+}
+.contact h4{
+    color:rgb(30, 80, 244);
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    padding-top: 10px;
+}
+.contact a{
+    margin-top: 20px;
+    color: rgb(30, 80, 244);
+    text-decoration: none;
+    font-size: 1.2em;
+}
